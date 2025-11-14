@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h2>게시판 목록 (Mock Data)</h2>
+<h2>게시판 목록</h2>
 
 <a href="write.html">새 글 작성</a>
 <br><br>
@@ -24,10 +24,11 @@
 
     <tr>
         <td>1</td>
-        <td><a href="view.jsp?id=1">상세보기</a></td>
+        <td>알립니다</td>
         <td>홍길동</td>
         <td>공지</td>
         <td>2025-11-14</td>
+        <td><a href="view.jsp?id=1">상세보기</a></td>
     </tr>
 </table>
 
