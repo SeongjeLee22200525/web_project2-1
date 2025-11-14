@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+<form action="form_ok.jsp" method="post">
+    <p>
+        이름: <input type="text" name="name" required>
+    </p>
 
+    <p>
+        나이: <input type="number" name="age" required>
+    </p>
+
+    <p>
+        이메일: <input type="email" name="email" required>
+    </p>
+
+    <p>
+        성별:
+        <select name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+        </select>
+    </p>
+
+    <p>
+        하고 싶은 말: <br>
+        <textarea name="message" rows="5" cols="40"></textarea>
+    </p>
+
+    <button type="submit">전송</button>
+</form>
 </body>
 </html>
