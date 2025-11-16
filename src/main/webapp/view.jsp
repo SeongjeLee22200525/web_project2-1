@@ -18,9 +18,9 @@
 
 <hr>
 
-<a href="edit.html?id=1">✏ 수정</a> |
-<a href="delete_ok.jsp?id=1">🗑 삭제</a> |
-<a href="list.jsp">← 목록으로</a>
+<a href="edit.html?id=1">수정</a> |
+<a href="delete_ok.jsp?id=1">삭제</a> |
+<a href="list.jsp">목록으로</a>
 
 </body>
 </html>
