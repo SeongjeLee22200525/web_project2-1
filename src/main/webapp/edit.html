@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>게시글 수정</title>
 </head>
 <body>
+
+<h2>게시글 수정 (Mock Data)</h2>
+
+<form action="edit_ok.jsp" method="post">
+    <p>ID: <input type="number" name="id" value="1" readonly></p>
+    <p>제목: <input type="text" name="title" value="첫 번째 글입니다"></p>
+    <p>작성자: <input type="text" name="writer" value="홍길동"></p>
+    <p>카테고리:
+        <select name="category">
+            <option value="공지" selected>공지</option>
+            <option value="자유">자유</option>
+            <option value="질문">질문</option>
+        </select>
+    </p>
+    <p>작성일: <input type="date" name="createdAt" value="2025-11-14"></p>
+    <p>내용: <br>
+        <textarea name="content" rows="5" cols="50">.....</textarea>
+    </p>
+
+    <button type="submit">수정 저장</button>
+    <a href="view.jsp?id=1">취소</a>
+</form>
 
 </body>
 </html>
