@@ -1,16 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 25. 11. 14.
-  Time: 오후 3:10
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>삭제 완료</title>
 </head>
 <body>
+
+<h2>게시글 삭제 완료</h2>
+
+<%
+    String id = request.getParameter("id");
+%>
+
+<p>ID <strong><%= id %></strong> 번 게시물 삭제 완료!</p>
+
+<a href="list.jsp">목록으로</a>
 
 </body>
 </html>
