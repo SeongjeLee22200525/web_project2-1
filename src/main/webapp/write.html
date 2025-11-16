@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>새 글 작성</title>
 </head>
 <body>
+
+<h2>새 글 작성</h2>
+
+<form action="write_ok.jsp" method="post">
+    <p>ID: <input type="number" name="id" required></p>
+    <p>제목: <input type="text" name="title" required></p>
+    <p>작성자: <input type="text" name="writer" required></p>
+    <p>카테고리:
+        <select name="category">
+            <option value="공지">공지</option>
+            <option value="자유">자유</option>
+            <option value="질문">질문</option>
+        </select>
+    </p>
+    <p>작성일: <input type="date" name="createdAt" required></p>
+    <p>내용: <br>
+        <textarea name="content" rows="5" cols="50"></textarea>
+    </p>
+
+    <button type="submit">저장</button>
+    <a href="list.jsp">취소</a>
+</form>
 
 </body>
 </html>
