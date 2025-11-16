@@ -1,5 +1,7 @@
 FROM tomcat:9.0
 
-ADD target/*.war /usr/local/tomcat/webapps/
+ENV LANG C.UTF-8
+
+COPY ./src/main/webapp /usr/local/tomcat/webapps/ROOT/
 
 CMD ["catalina.sh", "run"]
